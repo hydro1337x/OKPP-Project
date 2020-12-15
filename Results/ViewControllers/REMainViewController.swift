@@ -8,22 +8,36 @@
 import UIKit
 
 class REMainViewController: UIViewController {
+    
+    // MARK: - Properties
+    private var viewModel: REMainViewModel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    // MARK: - Lifecycle
+    override func loadView() {
+        super.loadView()
+        viewModel = REMainViewModel()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
     }
-    */
+    
+    private func setup() {
+        setupNavigationBar()
+    }
+    
+    // MARK: - Actions
+    @objc private func handleLeftBarButtonItemTap(_ sender: UIButton) {
+        // Handle opening
+    }
+    
+    // MARK: - Methods
+    private func setupNavigationBar() {
+        navigationItem.title = "Sports"
+        let image = UIImage(systemName: "list.bullet")?.withTintColor(.white, renderingMode: .alwaysTemplate)
+        let leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleLeftBarButtonItemTap(_:)))
+        navigationItem.leftBarButtonItem = leftBarButtonItem
+    }
 
 }

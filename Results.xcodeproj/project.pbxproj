@@ -14,6 +14,12 @@
 		0CA6F6A62589210D0059BEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6A42589210D0059BEAC /* LaunchScreen.storyboard */; };
 		0CA6F6B7258922560059BEAC /* REColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6B6258922560059BEAC /* REColor.swift */; };
 		0CA6F6BB2589240E0059BEAC /* REMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */; };
+		0CA6F6BF2589274C0059BEAC /* RESideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6BE2589274C0059BEAC /* RESideMenuView.swift */; };
+		0CA6F6C2258927670059BEAC /* RESideMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C1258927670059BEAC /* RESideMenuView.xib */; };
+		0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */; };
+		0CA6F6C7258928E70059BEAC /* RESideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */; };
+		0CDFD42F25892D2100777FAC /* REMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD42E25892D2100777FAC /* REMainViewModel.swift */; };
+		0CDFD43225892DF400777FAC /* REPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD43125892DF400777FAC /* REPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		0CA6F6A72589210D0059BEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CA6F6B6258922560059BEAC /* REColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REColor.swift; sourceTree = "<group>"; };
 		0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMainViewController.swift; sourceTree = "<group>"; };
+		0CA6F6BE2589274C0059BEAC /* RESideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESideMenuView.swift; sourceTree = "<group>"; };
+		0CA6F6C1258927670059BEAC /* RESideMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESideMenuView.xib; sourceTree = "<group>"; };
+		0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		0CDFD42E25892D2100777FAC /* REMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMainViewModel.swift; sourceTree = "<group>"; };
+		0CDFD43125892DF400777FAC /* REPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 				0CA6F6992589210A0059BEAC /* AppDelegate.swift */,
 				0CA6F69B2589210A0059BEAC /* SceneDelegate.swift */,
 				0CA6F6AF2589219F0059BEAC /* ViewControllers */,
+				0CA6F6BD258927150059BEAC /* Views */,
 				0CA6F6B4258921F70059BEAC /* Cells */,
 				0CA6F6B3258921F10059BEAC /* Models */,
 				0CA6F6B2258921D10059BEAC /* Utils */,
@@ -75,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */,
+				0CDFD42E25892D2100777FAC /* REMainViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -83,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA6F6B6258922560059BEAC /* REColor.swift */,
+				0CDFD43125892DF400777FAC /* REPresenter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -97,6 +112,8 @@
 		0CA6F6B4258921F70059BEAC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */,
+				0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -108,6 +125,15 @@
 				0CA6F6A42589210D0059BEAC /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0CA6F6BD258927150059BEAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CA6F6BE2589274C0059BEAC /* RESideMenuView.swift */,
+				0CA6F6C1258927670059BEAC /* RESideMenuView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +195,8 @@
 			files = (
 				0CA6F6A62589210D0059BEAC /* LaunchScreen.storyboard in Resources */,
 				0CA6F6A32589210D0059BEAC /* Assets.xcassets in Resources */,
+				0CA6F6C7258928E70059BEAC /* RESideMenuTableViewCell.xib in Resources */,
+				0CA6F6C2258927670059BEAC /* RESideMenuView.xib in Resources */,
 				0CA6F6A12589210A0059BEAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,7 +210,11 @@
 			files = (
 				0CA6F6BB2589240E0059BEAC /* REMainViewController.swift in Sources */,
 				0CA6F69A2589210A0059BEAC /* AppDelegate.swift in Sources */,
+				0CA6F6BF2589274C0059BEAC /* RESideMenuView.swift in Sources */,
+				0CDFD43225892DF400777FAC /* REPresenter.swift in Sources */,
 				0CA6F6B7258922560059BEAC /* REColor.swift in Sources */,
+				0CDFD42F25892D2100777FAC /* REMainViewModel.swift in Sources */,
+				0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */,
 				0CA6F69C2589210A0059BEAC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
