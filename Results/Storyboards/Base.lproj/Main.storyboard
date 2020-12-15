@@ -8,17 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Results" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="REMainViewController" customModule="Results" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xx-Bv-9c0" customClass="RESideMenuView" customModule="Results" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="300" height="808"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ms3-sj-7jR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0xx-Bv-9c0" secondAttribute="bottom" id="kKh-9i-5uL"/>
+                            <constraint firstItem="0xx-Bv-9c0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lGo-vk-v1D"/>
+                            <constraint firstItem="0xx-Bv-9c0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zVN-5Y-bgG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bRB-Fb-bmy"/>
+                    <connections>
+                        <outlet property="menuWidthConstraint" destination="ms3-sj-7jR" id="UxT-CA-xSr"/>
+                        <outlet property="sideMenuView" destination="0xx-Bv-9c0" id="kAZ-hg-si6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +64,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

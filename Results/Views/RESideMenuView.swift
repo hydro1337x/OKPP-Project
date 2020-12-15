@@ -10,6 +10,7 @@ import UIKit
 class RESideMenuView: UIView {
     
     // MARK: - Outlets
+    @IBOutlet var contentView: UIView!
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Properties
@@ -18,19 +19,17 @@ class RESideMenuView: UIView {
     private let cellID = "RESideMenuTableViewCell"
     
     // MARK: - Lifecycle
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    override class func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
+        setup()
     }
     
     private func setup() {
+        Bundle.main.loadNibNamed("RESideMenuView", owner: self, options: nil)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(RESideMenuTableViewCell.self, forCellReuseIdentifier: cellID)
@@ -49,7 +48,7 @@ extension RESideMenuView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? RESideMenuTableViewCell else { return UITableViewCell()}
+        let cell: RESideMenuTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! RESideMenuTableViewCell
         
         let title = titles[indexPath.row]
         let iconName = iconNames[indexPath.row]
@@ -57,6 +56,10 @@ extension RESideMenuView: UITableViewDelegate, UITableViewDataSource {
         cell.config(with: title, and: iconName)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RESideMenuView" customModule="Results" customModuleProvider="target">
             <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="FUh-vN-UsH"/>
                 <outlet property="tableView" destination="skm-tp-sVS" id="15u-wf-86n"/>
             </connections>
         </placeholder>
@@ -18,9 +19,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="skm-tp-sVS">
-                    <rect key="frame" x="25" y="88.5" width="364" height="748.5"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="skm-tp-sVS">
+                    <rect key="frame" x="0.0" y="88.5" width="414" height="782.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" systemColor="systemGreenColor"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-W8-tol">
                     <rect key="frame" x="25" y="25" width="76.5" height="32.5"/>
@@ -43,11 +45,11 @@
                 <constraint firstItem="SLP-W8-tol" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="50G-Bj-tqi"/>
                 <constraint firstItem="uvC-ln-L1j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KWW-CO-UNv"/>
                 <constraint firstItem="SLP-W8-tol" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="NQh-Eu-JGq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="skm-tp-sVS" secondAttribute="bottom" constant="25" id="Osb-Cx-Kzb"/>
+                <constraint firstAttribute="bottom" secondItem="skm-tp-sVS" secondAttribute="bottom" constant="25" id="Z2c-Mu-bkd"/>
                 <constraint firstAttribute="trailing" secondItem="uvC-ln-L1j" secondAttribute="trailing" id="cJf-3v-GA0"/>
-                <constraint firstItem="skm-tp-sVS" firstAttribute="top" secondItem="uvC-ln-L1j" secondAttribute="bottom" constant="25" id="hhb-xm-IIw"/>
-                <constraint firstItem="skm-tp-sVS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="qal-jU-Td3"/>
-                <constraint firstAttribute="trailing" secondItem="skm-tp-sVS" secondAttribute="trailing" constant="25" id="tY8-Pv-r6p"/>
+                <constraint firstItem="skm-tp-sVS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qal-jU-Td3"/>
+                <constraint firstAttribute="trailing" secondItem="skm-tp-sVS" secondAttribute="trailing" id="tY8-Pv-r6p"/>
+                <constraint firstItem="skm-tp-sVS" firstAttribute="top" secondItem="uvC-ln-L1j" secondAttribute="bottom" constant="25" id="th1-du-IUt"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -60,6 +62,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
