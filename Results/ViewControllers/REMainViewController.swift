@@ -13,8 +13,10 @@ class REMainViewController: UIViewController {
     private var viewModel: REMainViewModel!
     private var menuShown = false
     private let horizontalMenuTranslation: CGFloat = 2 * UIScreen.main.bounds.width / 3
+    private let cellID = "REMatchTableViewCell"
     
     // MARK: - Outlets
+    @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var sideMenuView: RESideMenuView!
     @IBOutlet private weak var menuWidthConstraint: NSLayoutConstraint!
     
@@ -30,6 +32,10 @@ class REMainViewController: UIViewController {
     }
     
     private func setup() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "REMatchTableViewCell", bundle: nil), forCellReuseIdentifier: cellID)
+        
         view.backgroundColor = .white
         
         setupNavigationBar()
@@ -43,7 +49,9 @@ class REMainViewController: UIViewController {
         let translation = CGAffineTransform(translationX: menuShown ? 0 : -horizontalMenuTranslation, y: 0)
         menuShown = !menuShown
         
-        sideMenuView.layer.setAffineTransform(translation)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
+            self.sideMenuView.layer.setAffineTransform(translation)
+        }, completion: nil)
     }
     
     // MARK: - Methods
@@ -54,4 +62,24 @@ class REMainViewController: UIViewController {
         navigationItem.leftBarButtonItem = leftBarButtonItem
     }
 
+}
+
+extension REMainViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! REMatchTableViewCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        REPresenter.showMatchDetailsViewController(onTopOf: self)
+    }
 }

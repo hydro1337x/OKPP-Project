@@ -29,10 +29,11 @@ class RESideMenuView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        contentView.backgroundColor = REColor.main
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(RESideMenuTableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(UINib(nibName: "RESideMenuTableViewCell", bundle: nil), forCellReuseIdentifier: cellID)
     }
     
     final func config(with titles: [String], iconNames: [String]) {

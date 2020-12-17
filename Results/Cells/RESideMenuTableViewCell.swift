@@ -14,8 +14,6 @@ class RESideMenuTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     
     // MARK: - Properties
-    private var title: String!
-    private var imageName: String!
     
     // MARK: - Lifecyle
     override func awakeFromNib() {
@@ -24,14 +22,12 @@ class RESideMenuTableViewCell: UITableViewCell {
     }
     
     private func setup() {
-        
-        titleLabel.text = title
-        iconImageView.image = UIImage(systemName: imageName)
+        contentView.backgroundColor = REColor.main
     }
     
     final func config(with title: String?, and imageName: String) {
-        self.title = title
-        self.imageName = imageName
+        self.titleLabel.text = title
+        self.iconImageView.image = UIImage(systemName: imageName)
     }
     
 }

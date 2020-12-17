@@ -18,6 +18,9 @@
 		0CA6F6C2258927670059BEAC /* RESideMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C1258927670059BEAC /* RESideMenuView.xib */; };
 		0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */; };
 		0CA6F6C7258928E70059BEAC /* RESideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */; };
+		0CC5E101258BC10A0040F504 /* REMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5E0FF258BC10A0040F504 /* REMatchTableViewCell.swift */; };
+		0CC5E102258BC10A0040F504 /* REMatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC5E100258BC10A0040F504 /* REMatchTableViewCell.xib */; };
+		0CC5E105258BC2770040F504 /* REMatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */; };
 		0CDFD42F25892D2100777FAC /* REMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD42E25892D2100777FAC /* REMainViewModel.swift */; };
 		0CDFD43225892DF400777FAC /* REPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD43125892DF400777FAC /* REPresenter.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		0CA6F6C1258927670059BEAC /* RESideMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESideMenuView.xib; sourceTree = "<group>"; };
 		0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		0CC5E0FF258BC10A0040F504 /* REMatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatchTableViewCell.swift; sourceTree = "<group>"; };
+		0CC5E100258BC10A0040F504 /* REMatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = REMatchTableViewCell.xib; sourceTree = "<group>"; };
+		0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatchDetailsViewController.swift; sourceTree = "<group>"; };
 		0CDFD42E25892D2100777FAC /* REMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMainViewModel.swift; sourceTree = "<group>"; };
 		0CDFD43125892DF400777FAC /* REPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +95,7 @@
 			children = (
 				0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */,
 				0CDFD42E25892D2100777FAC /* REMainViewModel.swift */,
+				0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 			children = (
 				0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */,
 				0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */,
+				0CC5E0FF258BC10A0040F504 /* REMatchTableViewCell.swift */,
+				0CC5E100258BC10A0040F504 /* REMatchTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -197,6 +206,7 @@
 				0CA6F6A32589210D0059BEAC /* Assets.xcassets in Resources */,
 				0CA6F6C7258928E70059BEAC /* RESideMenuTableViewCell.xib in Resources */,
 				0CA6F6C2258927670059BEAC /* RESideMenuView.xib in Resources */,
+				0CC5E102258BC10A0040F504 /* REMatchTableViewCell.xib in Resources */,
 				0CA6F6A12589210A0059BEAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC5E105258BC2770040F504 /* REMatchDetailsViewController.swift in Sources */,
 				0CA6F6BB2589240E0059BEAC /* REMainViewController.swift in Sources */,
 				0CA6F69A2589210A0059BEAC /* AppDelegate.swift in Sources */,
 				0CA6F6BF2589274C0059BEAC /* RESideMenuView.swift in Sources */,
@@ -215,6 +226,7 @@
 				0CA6F6B7258922560059BEAC /* REColor.swift in Sources */,
 				0CDFD42F25892D2100777FAC /* REMainViewModel.swift in Sources */,
 				0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */,
+				0CC5E101258BC10A0040F504 /* REMatchTableViewCell.swift in Sources */,
 				0CA6F69C2589210A0059BEAC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

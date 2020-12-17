@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-NK-Fdg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xx-Bv-9c0" customClass="RESideMenuView" customModule="Results" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="300" height="808"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -27,8 +31,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="KmP-NK-Fdg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gdr-l7-W4h"/>
+                            <constraint firstAttribute="bottom" secondItem="KmP-NK-Fdg" secondAttribute="bottom" id="I1R-Ry-D6f"/>
+                            <constraint firstItem="KmP-NK-Fdg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YzW-H6-tba"/>
                             <constraint firstAttribute="bottom" secondItem="0xx-Bv-9c0" secondAttribute="bottom" id="kKh-9i-5uL"/>
                             <constraint firstItem="0xx-Bv-9c0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lGo-vk-v1D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KmP-NK-Fdg" secondAttribute="trailing" id="y1B-If-tqd"/>
                             <constraint firstItem="0xx-Bv-9c0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zVN-5Y-bgG"/>
                         </constraints>
                     </view>
@@ -36,11 +44,27 @@
                     <connections>
                         <outlet property="menuWidthConstraint" destination="ms3-sj-7jR" id="UxT-CA-xSr"/>
                         <outlet property="sideMenuView" destination="0xx-Bv-9c0" id="kAZ-hg-si6"/>
+                        <outlet property="tableView" destination="KmP-NK-Fdg" id="NYo-B0-w2r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="702.89855072463774" y="138.61607142857142"/>
+        </scene>
+        <!--Match Details View Controller-->
+        <scene sceneID="DID-TF-Rgf">
+            <objects>
+                <viewController storyboardIdentifier="REMatchDetailsViewController" id="sIw-uy-H2G" customClass="REMatchDetailsViewController" customModule="Results" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qOe-2f-58h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JTV-eR-WLH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3R0-7r-ua1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="acJ-x1-Cio">
