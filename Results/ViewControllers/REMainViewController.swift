@@ -23,7 +23,7 @@ class REMainViewController: UIViewController {
     // MARK: - Lifecycle
     override func loadView() {
         super.loadView()
-        viewModel = REMainViewModel()
+        viewModel = REMainViewModel(with: self)
     }
     
     override func viewDidLoad() {
@@ -40,7 +40,6 @@ class REMainViewController: UIViewController {
         
         setupNavigationBar()
         
-        sideMenuView.config(with: viewModel.titles, iconNames: viewModel.iconNames)
         menuWidthConstraint.constant = horizontalMenuTranslation
     }
     
@@ -71,7 +70,7 @@ extension REMainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.matches.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,5 +80,16 @@ extension REMainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         REPresenter.showMatchDetailsViewController(onTopOf: self)
+    }
+}
+
+extension REMainViewController: REMainViewModelDelegate {
+    func didFetchData() {
+        DispatchQueue.main.async { [weak self] in
+            guard let welf = self else { return }
+            welf.sideMenuView.config(with: welf.viewModel.sports)
+            welf.tableView.reloadData()
+            welf.sideMenuView.reloadTableView()
+        }
     }
 }

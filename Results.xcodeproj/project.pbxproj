@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0620BB25B4864A0011228D /* REEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0620BA25B4864A0011228D /* REEndpoint.swift */; };
+		0C3F6B8C25B48AA1008AD32D /* RESport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F6B8B25B48AA1008AD32D /* RESport.swift */; };
+		0C3F6B9225B498D5008AD32D /* REMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F6B9125B498D5008AD32D /* REMatch.swift */; };
+		0C3F6B9525B49907008AD32D /* RETeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F6B9425B49907008AD32D /* RETeam.swift */; };
 		0CA6F69A2589210A0059BEAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6992589210A0059BEAC /* AppDelegate.swift */; };
 		0CA6F69C2589210A0059BEAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F69B2589210A0059BEAC /* SceneDelegate.swift */; };
 		0CA6F6A12589210A0059BEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F69F2589210A0059BEAC /* Main.storyboard */; };
@@ -23,9 +27,14 @@
 		0CC5E105258BC2770040F504 /* REMatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */; };
 		0CDFD42F25892D2100777FAC /* REMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD42E25892D2100777FAC /* REMainViewModel.swift */; };
 		0CDFD43225892DF400777FAC /* REPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFD43125892DF400777FAC /* REPresenter.swift */; };
+		24142C02C6D4AB0B1B4992CC /* Pods_Results.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E4CEF5DEBCDBC385B1A769 /* Pods_Results.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0620BA25B4864A0011228D /* REEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REEndpoint.swift; sourceTree = "<group>"; };
+		0C3F6B8B25B48AA1008AD32D /* RESport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESport.swift; sourceTree = "<group>"; };
+		0C3F6B9125B498D5008AD32D /* REMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatch.swift; sourceTree = "<group>"; };
+		0C3F6B9425B49907008AD32D /* RETeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RETeam.swift; sourceTree = "<group>"; };
 		0CA6F6962589210A0059BEAC /* Results.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Results.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA6F6992589210A0059BEAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA6F69B2589210A0059BEAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +53,9 @@
 		0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatchDetailsViewController.swift; sourceTree = "<group>"; };
 		0CDFD42E25892D2100777FAC /* REMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMainViewModel.swift; sourceTree = "<group>"; };
 		0CDFD43125892DF400777FAC /* REPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPresenter.swift; sourceTree = "<group>"; };
+		50E4CEF5DEBCDBC385B1A769 /* Pods_Results.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Results.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5697FDB70B8BBECF4C66C072 /* Pods-Results.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Results.release.xcconfig"; path = "Target Support Files/Pods-Results/Pods-Results.release.xcconfig"; sourceTree = "<group>"; };
+		A4F16EE6EC6C97F6B9CAAA8C /* Pods-Results.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Results.debug.xcconfig"; path = "Target Support Files/Pods-Results/Pods-Results.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24142C02C6D4AB0B1B4992CC /* Pods_Results.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +75,8 @@
 			children = (
 				0CA6F6982589210A0059BEAC /* Results */,
 				0CA6F6972589210A0059BEAC /* Products */,
+				B55A95CBF1DD1F164EAEA05E /* Pods */,
+				29932593982737E8D31E7816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +120,7 @@
 			children = (
 				0CA6F6B6258922560059BEAC /* REColor.swift */,
 				0CDFD43125892DF400777FAC /* REPresenter.swift */,
+				0C0620BA25B4864A0011228D /* REEndpoint.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -112,6 +128,9 @@
 		0CA6F6B3258921F10059BEAC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0C3F6B8B25B48AA1008AD32D /* RESport.swift */,
+				0C3F6B9425B49907008AD32D /* RETeam.swift */,
+				0C3F6B9125B498D5008AD32D /* REMatch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +164,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		29932593982737E8D31E7816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50E4CEF5DEBCDBC385B1A769 /* Pods_Results.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55A95CBF1DD1F164EAEA05E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4F16EE6EC6C97F6B9CAAA8C /* Pods-Results.debug.xcconfig */,
+				5697FDB70B8BBECF4C66C072 /* Pods-Results.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA6F6AA2589210D0059BEAC /* Build configuration list for PBXNativeTarget "Results" */;
 			buildPhases = (
+				A7332996741710D57A9EAB66 /* [CP] Check Pods Manifest.lock */,
 				0CA6F6922589210A0059BEAC /* Sources */,
 				0CA6F6932589210A0059BEAC /* Frameworks */,
 				0CA6F6942589210A0059BEAC /* Resources */,
+				4F965B29852C7AE519278B2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +251,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F965B29852C7AE519278B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Results/Pods-Results-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Results/Pods-Results-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Results/Pods-Results-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7332996741710D57A9EAB66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Results-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CA6F6922589210A0059BEAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +301,8 @@
 				0CC5E105258BC2770040F504 /* REMatchDetailsViewController.swift in Sources */,
 				0CA6F6BB2589240E0059BEAC /* REMainViewController.swift in Sources */,
 				0CA6F69A2589210A0059BEAC /* AppDelegate.swift in Sources */,
+				0C3F6B9525B49907008AD32D /* RETeam.swift in Sources */,
+				0C3F6B9225B498D5008AD32D /* REMatch.swift in Sources */,
 				0CA6F6BF2589274C0059BEAC /* RESideMenuView.swift in Sources */,
 				0CDFD43225892DF400777FAC /* REPresenter.swift in Sources */,
 				0CA6F6B7258922560059BEAC /* REColor.swift in Sources */,
@@ -228,6 +310,8 @@
 				0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */,
 				0CC5E101258BC10A0040F504 /* REMatchTableViewCell.swift in Sources */,
 				0CA6F69C2589210A0059BEAC /* SceneDelegate.swift in Sources */,
+				0C0620BB25B4864A0011228D /* REEndpoint.swift in Sources */,
+				0C3F6B8C25B48AA1008AD32D /* RESport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +455,7 @@
 		};
 		0CA6F6AB2589210D0059BEAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F16EE6EC6C97F6B9CAAA8C /* Pods-Results.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,6 +475,7 @@
 		};
 		0CA6F6AC2589210D0059BEAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5697FDB70B8BBECF4C66C072 /* Pods-Results.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

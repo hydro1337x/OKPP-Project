@@ -14,8 +14,7 @@ class RESideMenuView: UIView {
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Properties
-    private var iconNames: [String] = []
-    private var titles: [String] = []
+    private var sports: [RESport] = []
     private let cellID = "RESideMenuTableViewCell"
     
     // MARK: - Lifecycle
@@ -23,6 +22,8 @@ class RESideMenuView: UIView {
         super.awakeFromNib()
         setup()
     }
+    
+    // MARK: - Config
     
     private func setup() {
         Bundle.main.loadNibNamed("RESideMenuView", owner: self, options: nil)
@@ -36,25 +37,28 @@ class RESideMenuView: UIView {
         tableView.register(UINib(nibName: "RESideMenuTableViewCell", bundle: nil), forCellReuseIdentifier: cellID)
     }
     
-    final func config(with titles: [String], iconNames: [String]) {
-        self.iconNames = iconNames
-        self.titles = titles
+    final func config(with sports: [RESport]) {
+        self.sports = sports
+    }
+    
+    // MARK: - Methods
+    final func reloadTableView() {
+        tableView.reloadData()
     }
 
 }
 
 extension RESideMenuView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
+        return sports.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: RESideMenuTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! RESideMenuTableViewCell
         
-        let title = titles[indexPath.row]
-        let iconName = iconNames[indexPath.row]
+        let title = sports[indexPath.row].name
         
-        cell.config(with: title, and: iconName)
+        cell.config(with: title, and: "iconName")
         
         return cell
     }
