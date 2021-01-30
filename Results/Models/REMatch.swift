@@ -19,6 +19,8 @@ class REMatch {
     let sport: RESport
     let teamOne: RETeam
     let teamTwo: RETeam
+    let score: String
+    var events: [REEvent] = []
     
     init(json: JSON) {
         self.id = json["id"].intValue
@@ -28,5 +30,10 @@ class REMatch {
         self.sport = RESport(json: json["sport"])
         self.teamOne = RETeam(json: json["teamOne"])
         self.teamTwo = RETeam(json: json["teamTwo"])
+        self.score = json["score"].stringValue
+        json["events"].arrayValue.forEach {
+            let event = REEvent(json: $0)
+            events.append(event)
+        }
     }
 }

@@ -7,64 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "329AD86F-B9BE-4256-9736-BD1E6F648921"
+            uuid = "3C856B54-9D11-4E5A-AAAD-9DFF91E0FEE4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Results/Views/RESideMenuView.swift"
+            filePath = "Results/ViewControllers/REMatchDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "config(with:)"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "didFetchData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8698678C-A46A-4FD4-86F1-DE2AF948E064"
+            uuid = "715FF13F-B401-493F-9AF8-4634E99C7460"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Results/Views/RESideMenuView.swift"
+            filePath = "Results/ViewControllers/REMatchDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "reloadTableView()"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DB91EDB5-8E8D-4CD8-B1C1-F8B1A6CA1847"
+            uuid = "32E223C0-D302-45E4-89C6-A64C521F20DC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Results/ViewControllers/REMainViewModel.swift"
+            filePath = "Results/ViewControllers/REMatchDetailsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "fetchMatches()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "205EBBFC-8C14-4631-8B87-5F3ED5201CCF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Results/ViewControllers/REMainViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "fetchSports()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchMatchDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

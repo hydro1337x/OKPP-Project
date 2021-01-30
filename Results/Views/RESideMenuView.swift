@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol RESideMenuViewDelegate: class {
+    func didSelectSport(at index: Int)
+}
+
 class RESideMenuView: UIView {
     
     // MARK: - Outlets
@@ -14,8 +18,9 @@ class RESideMenuView: UIView {
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Properties
+    private weak var delegate: RESideMenuViewDelegate?
     private var sports: [RESport] = []
-    private let cellID = "RESideMenuTableViewCell"
+    private let cellID = "RESimpleTableViewCell"
     
     // MARK: - Lifecycle
     override func awakeFromNib() {
@@ -30,15 +35,15 @@ class RESideMenuView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        contentView.backgroundColor = REColor.main
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "RESideMenuTableViewCell", bundle: nil), forCellReuseIdentifier: cellID)
+        tableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier: cellID)
     }
     
-    final func config(with sports: [RESport]) {
+    final func config(with sports: [RESport], and delegate: RESideMenuViewDelegate?) {
         self.sports = sports
+        self.delegate = delegate
     }
     
     // MARK: - Methods
@@ -54,11 +59,11 @@ extension RESideMenuView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: RESideMenuTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! RESideMenuTableViewCell
+        let cell: RESimpleTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! RESimpleTableViewCell
         
         let title = sports[indexPath.row].name
         
-        cell.config(with: title, and: "iconName")
+        cell.config(with: title)
         
         return cell
     }
@@ -67,6 +72,9 @@ extension RESideMenuView: UITableViewDelegate, UITableViewDataSource {
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelectSport(at: indexPath.row)
+    }
     
 }
 

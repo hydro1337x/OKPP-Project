@@ -1,5 +1,5 @@
 //
-//  RESideMenuTableViewCell.swift
+//  RESimpleTableViewCell.swift
 //  Results
 //
 //  Created by Benjamin Mecanović on 15/12/2020.
@@ -7,10 +7,9 @@
 
 import UIKit
 
-class RESideMenuTableViewCell: UITableViewCell {
+class RESimpleTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
-    @IBOutlet private weak var iconImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     
     // MARK: - Properties
@@ -22,12 +21,11 @@ class RESideMenuTableViewCell: UITableViewCell {
     }
     
     private func setup() {
-        contentView.backgroundColor = REColor.main
+        
     }
     
-    final func config(with title: String?, and imageName: String) {
+    final func config(with title: String?) {
         self.titleLabel.text = title
-        self.iconImageView.image = UIImage(systemName: imageName)
     }
     
 }

@@ -17,7 +17,7 @@ class REEndpoint {
     static var filterMatches = URL(string: base + "matches/filter/")!
     
     /// GET: https://student-sport-results.herokuapp.com/api/matches/get/:matchId
-    static var getMatches = URL(string: base + "matches/get/")!
+    static var getMatch = URL(string: base + "matches/get/")!
     
     /// GET: https://student-sport-results.herokuapp.com/api/faculties/filter
     static var filterFaculties = URL(string: base + "faculties/filter")!

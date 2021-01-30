@@ -20,11 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="skm-tp-sVS">
-                    <rect key="frame" x="0.0" y="88.5" width="414" height="807.5"/>
+                    <rect key="frame" x="0.0" y="63.5" width="414" height="832.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-W8-tol">
-                    <rect key="frame" x="25" y="25" width="76.5" height="32.5"/>
+                    <rect key="frame" x="25" y="15" width="76.5" height="32.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -40,15 +40,15 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="uvC-ln-L1j" firstAttribute="top" secondItem="SLP-W8-tol" secondAttribute="bottom" constant="5" id="1gZ-Bb-zOr"/>
-                <constraint firstItem="SLP-W8-tol" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="50G-Bj-tqi"/>
+                <constraint firstItem="uvC-ln-L1j" firstAttribute="top" secondItem="SLP-W8-tol" secondAttribute="bottom" constant="15" id="1gZ-Bb-zOr"/>
+                <constraint firstItem="SLP-W8-tol" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="50G-Bj-tqi"/>
                 <constraint firstItem="uvC-ln-L1j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KWW-CO-UNv"/>
                 <constraint firstItem="SLP-W8-tol" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="NQh-Eu-JGq"/>
                 <constraint firstAttribute="bottom" secondItem="skm-tp-sVS" secondAttribute="bottom" id="Z2c-Mu-bkd"/>
                 <constraint firstAttribute="trailing" secondItem="uvC-ln-L1j" secondAttribute="trailing" id="cJf-3v-GA0"/>
                 <constraint firstItem="skm-tp-sVS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qal-jU-Td3"/>
                 <constraint firstAttribute="trailing" secondItem="skm-tp-sVS" secondAttribute="trailing" id="tY8-Pv-r6p"/>
-                <constraint firstItem="skm-tp-sVS" firstAttribute="top" secondItem="uvC-ln-L1j" secondAttribute="bottom" constant="25" id="th1-du-IUt"/>
+                <constraint firstItem="skm-tp-sVS" firstAttribute="top" secondItem="uvC-ln-L1j" secondAttribute="bottom" id="th1-du-IUt"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

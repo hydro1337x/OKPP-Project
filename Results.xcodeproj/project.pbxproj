@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0C0620BB25B4864A0011228D /* REEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0620BA25B4864A0011228D /* REEndpoint.swift */; };
+		0C26177C25C5E62200C66D5F /* RETeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C26177B25C5E62200C66D5F /* RETeamDetailsViewController.swift */; };
+		0C26177F25C5E62D00C66D5F /* RETeamDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C26177E25C5E62D00C66D5F /* RETeamDetailsViewModel.swift */; };
 		0C3F6B8C25B48AA1008AD32D /* RESport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F6B8B25B48AA1008AD32D /* RESport.swift */; };
 		0C3F6B9225B498D5008AD32D /* REMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F6B9125B498D5008AD32D /* REMatch.swift */; };
 		0C3F6B9525B49907008AD32D /* RETeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F6B9425B49907008AD32D /* RETeam.swift */; };
+		0C50EE0D25B8A5DC005749C9 /* REEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50EE0C25B8A5DC005749C9 /* REEvent.swift */; };
+		0C50EE1025B8A93E005749C9 /* REPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50EE0F25B8A93E005749C9 /* REPlayer.swift */; };
+		0C50EE1325B8AC17005749C9 /* REMatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50EE1225B8AC17005749C9 /* REMatchDetailsViewModel.swift */; };
+		0C50EE1725B8B92B005749C9 /* REEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50EE1525B8B92B005749C9 /* REEventTableViewCell.swift */; };
+		0C50EE1825B8B92B005749C9 /* REEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C50EE1625B8B92B005749C9 /* REEventTableViewCell.xib */; };
 		0CA6F69A2589210A0059BEAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6992589210A0059BEAC /* AppDelegate.swift */; };
 		0CA6F69C2589210A0059BEAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F69B2589210A0059BEAC /* SceneDelegate.swift */; };
 		0CA6F6A12589210A0059BEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F69F2589210A0059BEAC /* Main.storyboard */; };
@@ -20,8 +27,8 @@
 		0CA6F6BB2589240E0059BEAC /* REMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */; };
 		0CA6F6BF2589274C0059BEAC /* RESideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6BE2589274C0059BEAC /* RESideMenuView.swift */; };
 		0CA6F6C2258927670059BEAC /* RESideMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C1258927670059BEAC /* RESideMenuView.xib */; };
-		0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */; };
-		0CA6F6C7258928E70059BEAC /* RESideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */; };
+		0CA6F6C6258928E70059BEAC /* RESimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C4258928E70059BEAC /* RESimpleTableViewCell.swift */; };
+		0CA6F6C7258928E70059BEAC /* RESimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6F6C5258928E70059BEAC /* RESimpleTableViewCell.xib */; };
 		0CC5E101258BC10A0040F504 /* REMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5E0FF258BC10A0040F504 /* REMatchTableViewCell.swift */; };
 		0CC5E102258BC10A0040F504 /* REMatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC5E100258BC10A0040F504 /* REMatchTableViewCell.xib */; };
 		0CC5E105258BC2770040F504 /* REMatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */; };
@@ -32,9 +39,16 @@
 
 /* Begin PBXFileReference section */
 		0C0620BA25B4864A0011228D /* REEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REEndpoint.swift; sourceTree = "<group>"; };
+		0C26177B25C5E62200C66D5F /* RETeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RETeamDetailsViewController.swift; sourceTree = "<group>"; };
+		0C26177E25C5E62D00C66D5F /* RETeamDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RETeamDetailsViewModel.swift; sourceTree = "<group>"; };
 		0C3F6B8B25B48AA1008AD32D /* RESport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESport.swift; sourceTree = "<group>"; };
 		0C3F6B9125B498D5008AD32D /* REMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatch.swift; sourceTree = "<group>"; };
 		0C3F6B9425B49907008AD32D /* RETeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RETeam.swift; sourceTree = "<group>"; };
+		0C50EE0C25B8A5DC005749C9 /* REEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REEvent.swift; sourceTree = "<group>"; };
+		0C50EE0F25B8A93E005749C9 /* REPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPlayer.swift; sourceTree = "<group>"; };
+		0C50EE1225B8AC17005749C9 /* REMatchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatchDetailsViewModel.swift; sourceTree = "<group>"; };
+		0C50EE1525B8B92B005749C9 /* REEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REEventTableViewCell.swift; sourceTree = "<group>"; };
+		0C50EE1625B8B92B005749C9 /* REEventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = REEventTableViewCell.xib; sourceTree = "<group>"; };
 		0CA6F6962589210A0059BEAC /* Results.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Results.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA6F6992589210A0059BEAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA6F69B2589210A0059BEAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +60,8 @@
 		0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMainViewController.swift; sourceTree = "<group>"; };
 		0CA6F6BE2589274C0059BEAC /* RESideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESideMenuView.swift; sourceTree = "<group>"; };
 		0CA6F6C1258927670059BEAC /* RESideMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESideMenuView.xib; sourceTree = "<group>"; };
-		0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESideMenuTableViewCell.swift; sourceTree = "<group>"; };
-		0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		0CA6F6C4258928E70059BEAC /* RESimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESimpleTableViewCell.swift; sourceTree = "<group>"; };
+		0CA6F6C5258928E70059BEAC /* RESimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RESimpleTableViewCell.xib; sourceTree = "<group>"; };
 		0CC5E0FF258BC10A0040F504 /* REMatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatchTableViewCell.swift; sourceTree = "<group>"; };
 		0CC5E100258BC10A0040F504 /* REMatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = REMatchTableViewCell.xib; sourceTree = "<group>"; };
 		0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REMatchDetailsViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +125,9 @@
 				0CA6F6BA2589240E0059BEAC /* REMainViewController.swift */,
 				0CDFD42E25892D2100777FAC /* REMainViewModel.swift */,
 				0CC5E104258BC2770040F504 /* REMatchDetailsViewController.swift */,
+				0C50EE1225B8AC17005749C9 /* REMatchDetailsViewModel.swift */,
+				0C26177B25C5E62200C66D5F /* RETeamDetailsViewController.swift */,
+				0C26177E25C5E62D00C66D5F /* RETeamDetailsViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -131,6 +148,8 @@
 				0C3F6B8B25B48AA1008AD32D /* RESport.swift */,
 				0C3F6B9425B49907008AD32D /* RETeam.swift */,
 				0C3F6B9125B498D5008AD32D /* REMatch.swift */,
+				0C50EE0C25B8A5DC005749C9 /* REEvent.swift */,
+				0C50EE0F25B8A93E005749C9 /* REPlayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,10 +157,12 @@
 		0CA6F6B4258921F70059BEAC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0CA6F6C4258928E70059BEAC /* RESideMenuTableViewCell.swift */,
-				0CA6F6C5258928E70059BEAC /* RESideMenuTableViewCell.xib */,
+				0CA6F6C4258928E70059BEAC /* RESimpleTableViewCell.swift */,
+				0CA6F6C5258928E70059BEAC /* RESimpleTableViewCell.xib */,
 				0CC5E0FF258BC10A0040F504 /* REMatchTableViewCell.swift */,
 				0CC5E100258BC10A0040F504 /* REMatchTableViewCell.xib */,
+				0C50EE1525B8B92B005749C9 /* REEventTableViewCell.swift */,
+				0C50EE1625B8B92B005749C9 /* REEventTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -242,7 +263,8 @@
 			files = (
 				0CA6F6A62589210D0059BEAC /* LaunchScreen.storyboard in Resources */,
 				0CA6F6A32589210D0059BEAC /* Assets.xcassets in Resources */,
-				0CA6F6C7258928E70059BEAC /* RESideMenuTableViewCell.xib in Resources */,
+				0C50EE1825B8B92B005749C9 /* REEventTableViewCell.xib in Resources */,
+				0CA6F6C7258928E70059BEAC /* RESimpleTableViewCell.xib in Resources */,
 				0CA6F6C2258927670059BEAC /* RESideMenuView.xib in Resources */,
 				0CC5E102258BC10A0040F504 /* REMatchTableViewCell.xib in Resources */,
 				0CA6F6A12589210A0059BEAC /* Main.storyboard in Resources */,
@@ -300,6 +322,9 @@
 			files = (
 				0CC5E105258BC2770040F504 /* REMatchDetailsViewController.swift in Sources */,
 				0CA6F6BB2589240E0059BEAC /* REMainViewController.swift in Sources */,
+				0C50EE0D25B8A5DC005749C9 /* REEvent.swift in Sources */,
+				0C50EE1325B8AC17005749C9 /* REMatchDetailsViewModel.swift in Sources */,
+				0C26177C25C5E62200C66D5F /* RETeamDetailsViewController.swift in Sources */,
 				0CA6F69A2589210A0059BEAC /* AppDelegate.swift in Sources */,
 				0C3F6B9525B49907008AD32D /* RETeam.swift in Sources */,
 				0C3F6B9225B498D5008AD32D /* REMatch.swift in Sources */,
@@ -307,11 +332,14 @@
 				0CDFD43225892DF400777FAC /* REPresenter.swift in Sources */,
 				0CA6F6B7258922560059BEAC /* REColor.swift in Sources */,
 				0CDFD42F25892D2100777FAC /* REMainViewModel.swift in Sources */,
-				0CA6F6C6258928E70059BEAC /* RESideMenuTableViewCell.swift in Sources */,
+				0CA6F6C6258928E70059BEAC /* RESimpleTableViewCell.swift in Sources */,
 				0CC5E101258BC10A0040F504 /* REMatchTableViewCell.swift in Sources */,
 				0CA6F69C2589210A0059BEAC /* SceneDelegate.swift in Sources */,
+				0C50EE1025B8A93E005749C9 /* REPlayer.swift in Sources */,
+				0C50EE1725B8B92B005749C9 /* REEventTableViewCell.swift in Sources */,
 				0C0620BB25B4864A0011228D /* REEndpoint.swift in Sources */,
 				0C3F6B8C25B48AA1008AD32D /* RESport.swift in Sources */,
+				0C26177F25C5E62D00C66D5F /* RETeamDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

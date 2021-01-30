@@ -15,6 +15,7 @@ class RETeam {
     let updatedAt: Date?
     let facultyId: Int
     let sportId: Int
+    var players: [REPlayer] = []
     
     init(json: JSON) {
         self.id = json["id"].intValue
@@ -24,5 +25,10 @@ class RETeam {
         let df = DateFormatter()
         self.createdAt = df.date(from: json["created_at"].stringValue)
         self.updatedAt = df.date(from: json["updated_at"].stringValue)
+        
+        json["players"].arrayValue.forEach {
+            let player = REPlayer(json: $0)
+            players.append(player)
+        }
     }
 }
