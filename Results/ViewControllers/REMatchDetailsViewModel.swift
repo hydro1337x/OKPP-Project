@@ -13,6 +13,7 @@ class REMatchDetailsViewModel {
     // MARK: - Properties
     private var matchId: Int!
     var match: REMatch!
+    var players: [REPlayer] = []
     private weak var delegate: RENetworkRequestableDelegate?
     
     // MARK: - Init
@@ -26,10 +27,13 @@ class REMatchDetailsViewModel {
     private func fetchMatchDetails() {
         let finalURL = REEndpoint.getMatch.appendingPathComponent(matchId.description)
         delegate?.didStartFetch()
+        players.removeAll()
         URLSession.shared.dataTask(with: finalURL) { [weak self] (data, _, error) in
             guard let welf = self else { return }
             if let data = data, let json = try? JSON(data: data) {
                 welf.match = REMatch(json: json["data"])
+                welf.players.append(contentsOf: welf.match.teamOne.players)
+                welf.players.append(contentsOf: welf.match.teamTwo.players)
                 welf.delegate?.didFetchData()
             } else {
                 print("Error: ", error?.localizedDescription as Any)
@@ -43,13 +47,8 @@ class REMatchDetailsViewModel {
     
     final func playerNameForEvent(_ event: REEvent) -> String? {
         let playerId = event.playerId
-        let teamId = event.teamId
         
-        if teamId == match.teamOneId {
-            return match.teamOne.players.first { $0.id == playerId }?.name
-        } else {
-            return match.teamTwo.players.first { $0.id == playerId }?.name
-        }
+        return players.first(where: { $0.id == playerId })?.name
     }
     
 }
