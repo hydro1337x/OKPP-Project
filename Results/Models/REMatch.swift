@@ -20,6 +20,7 @@ class REMatch {
     let teamOne: RETeam
     let teamTwo: RETeam
     let score: String
+    let gameFinished: Bool
     var events: [REEvent] = []
     
     init(json: JSON) {
@@ -31,6 +32,7 @@ class REMatch {
         self.teamOne = RETeam(json: json["teamOne"])
         self.teamTwo = RETeam(json: json["teamTwo"])
         self.score = json["score"].stringValue
+        self.gameFinished = json["gameFinished"].boolValue
         json["events"].arrayValue.forEach {
             let event = REEvent(json: $0)
             events.append(event)

@@ -15,6 +15,9 @@ class REEvent {
         case yellowCard = "yellow_card"
         case redCard = "red_card"
         case penaltyKick = "penalty_kick"
+        case fieldGoal = "field_goal"
+        case threePointFieldGoal = "three_point_field_goal"
+        case gameEnd = "game_end"
         
         var name: String {
             switch self {
@@ -29,6 +32,15 @@ class REEvent {
                 
             case .yellowCard:
                 return "Yellow card"
+                
+            case .fieldGoal:
+                return "3P"
+                
+            case .threePointFieldGoal:
+                return "2P"
+                
+            case .gameEnd:
+                return "Match end"
             }
         }
     }

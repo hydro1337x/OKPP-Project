@@ -32,11 +32,20 @@ class REEventTableViewCell: UITableViewCell {
     
     // MARK: - Public Config
     final func config(time: String, part: String, eventName: String, playerName: String, teamName: String ) {
-        self.timeLabel.text = time + "'"
-        self.partLabel.text = "(Part " + part + ")"
-        self.eventLabel.text = eventName
-        self.nameLabel.text = playerName
-        self.teamLabel.text = "(" + teamName + ")"
+        
+        if REEvent.EventType(rawValue: eventName) == REEvent.EventType.gameEnd {
+            self.timeLabel.text = eventName
+            self.partLabel.text = ""
+            self.eventLabel.text = ""
+            self.nameLabel.text = ""
+            self.teamLabel.text = ""
+        } else {
+            self.timeLabel.text = time + "'"
+            self.partLabel.text = "(Part " + part + ")"
+            self.eventLabel.text = eventName
+            self.nameLabel.text = playerName
+            self.teamLabel.text = "(" + teamName + ")"
+        }
     }
     
     // MARK: - Actions

@@ -92,7 +92,7 @@ extension REMainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! REMatchTableViewCell
         let match = viewModel.matchForRow(at: indexPath.row)
-        cell.config(firstTeamName: match.teamOne.name, secondTeamName: match.teamTwo.name, score: match.score)
+        cell.config(firstTeamName: match.teamOne.name, secondTeamName: match.teamTwo.name, score: match.score, gameFinished: match.gameFinished)
         return cell
     }
     
