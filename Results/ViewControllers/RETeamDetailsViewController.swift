@@ -30,7 +30,7 @@ class RETeamDetailsViewController: UIViewController {
     // MARK: - Lifecycle
     override func loadView() {
         super.loadView()
-        viewModel = RETeamDetailsViewModel(delegate: self, team: team)
+        viewModel = RETeamDetailsViewModel(players: team.players)
     }
     
     override func viewDidLoad() {
@@ -68,22 +68,5 @@ extension RETeamDetailsViewController: UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! RESimpleTableViewCell
         cell.config(with: viewModel.playerForRow(at: indexPath).name)
         return cell
-    }
-}
-
-extension RETeamDetailsViewController: RENetworkRequestableDelegate {
-    func didStartFetch() {
-        DispatchQueue.main.async { [weak self] in
-            guard self != nil else { return }
-            self?.activityIndicator.startAnimating()
-        }
-    }
-    
-    func didFetchData() {
-        DispatchQueue.main.async { [weak self] in
-            guard let welf = self else { return }
-            welf.tableView.reloadData()
-            self?.activityIndicator.stopAnimating()
-        }
     }
 }
